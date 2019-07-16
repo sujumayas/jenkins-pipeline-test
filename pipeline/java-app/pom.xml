@@ -84,7 +84,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-			<!-- This is supposed to fix 1of3 fails on tests ? -->
+			<!-- This is supposed to fix 1 of 3 fails on tests ? -->
 			<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
