@@ -98,5 +98,15 @@ No contributing allowed for this project.
         - La aplicación y sus endpoints​
         - Jenkins y el pipeline
 
+Install Docker-compose (porque lo paro olvidando):
+https://acloudxpert.com/how-to-install-docker-compose-on-amazon-linux-ami/
+
 For swagger use: 
 (https://dzone.com/articles/spring-boot-2-restful-api-documentation-with-swagg)
+
+
+## TODO Refactor: 
+
+- Cambiar dockerfile de deploy a multi-stage builds para no tener que descargar doble las dependencias de spring boot mientras el pom.xml no cambie. [link](https://dzone.com/articles/spring-boot-run-and-build-in-docker) y [2link](https://docs.docker.com/develop/develop-images/multistage-build/)
+
+
