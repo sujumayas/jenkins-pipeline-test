@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "ada8fb5d-2cff-4b2a-ae4d-0b3b8e6126dd",
+		"name": "SpringBoot Microservice Production",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/list",
+					"protocol": "http",
+					"host": [
+						"ec2-54-166-158-45",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"clients",
+						"list"
+					]
+				},
+				"description": "Get all clients"
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"Esen\",\n    \"lastName\": \"Espinosa\",\n    \"birthDate\": \"24-10-1986\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/create",
+					"protocol": "http",
+					"host": [
+						"ec2-54-166-158-45",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"clients",
+						"create"
+					]
+				},
+				"description": "Creates client"
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"name\": \"Pedro\",\n    \"lastName\": \"Baumann\",\n    \"birthDate\": \"24-10-1980\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/create",
+					"protocol": "http",
+					"host": [
+						"ec2-54-166-158-45",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"clients",
+						"create"
+					]
+				},
+				"description": "Creates client"
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/update/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 1,\n        \"name\": \"Updated Esen\",\n        \"lastName\": \"Updated Espinosa\",\n        \"age\": \"15\",\n        \"birthDate\": \"24-10-1986\"\n    }"
+				},
+				"url": {
+					"raw": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/update/1",
+					"protocol": "http",
+					"host": [
+						"ec2-54-166-158-45",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"clients",
+						"update",
+						"1"
+					]
+				},
+				"description": "Update Client 152"
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/delete/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/delete/1",
+					"protocol": "http",
+					"host": [
+						"ec2-54-166-158-45",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"clients",
+						"delete",
+						"1"
+					]
+				},
+				"description": "Deletes Client"
+			},
+			"response": []
+		},
+		{
+			"name": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/kpis",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-54-166-158-45.compute-1.amazonaws.com:4000/api/v1/clients/kpis",
+					"protocol": "http",
+					"host": [
+						"ec2-54-166-158-45",
+						"compute-1",
+						"amazonaws",
+						"com"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"clients",
+						"kpis"
+					]
+				},
+				"description": "Get all clients"
+			},
+			"response": []
+		}
+	]
+}
