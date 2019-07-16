@@ -5,3 +5,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile-Java
+    ports:
+      - "8081:8081"
+    networks:
+      - net
+networks:
+  net:
